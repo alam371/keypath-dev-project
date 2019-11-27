@@ -1,0 +1,51 @@
+$primary: #f5f4f4;
+$secondary: #000000;
+$tertiary:#202020;
+$baseFont: 'Playfair Display', serif;
+$secondaryFont: 'Poppins', sans-serif;
+$tertiaryFont: 'Source Sans Pro', sans-serif;
+
+@import "components/setup";
+@import "components/header";
+@import "components/main";
+@import "components/footer";
+@import "components/variables";
+@import "components/mediaquery";
+
+html{
+  font-size: 62.5%;
+}
+
+img{
+  width: 100%;
+  // display: block;
+}
+
+.wrapper{
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.container {margin:20px;padding:20px;background-color:pink;}
+#result {color:#7A81FF;}
+
+@media screen and (max-width: 700px) {
+  input {
+    display:block;
+  }
+}
+
+//  ==== HOW TO MAKE SCSS PARTIAL FILES =======
+// MAKE THE PARTIAL
+// SAVE THE PARTIAL
+// DELETE THE PARTIAL
+// IMPORT THE PARTIAL
+// SAVE style.scss
+
+// ==== HOW TO CODE MIXIN =======
+// @mixin primaryButton($primaryButton) {
+//     font-size: $sizeValue;
+//     color: blue;
+//     font-weight: bold;
+// }

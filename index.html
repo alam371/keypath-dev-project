@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Equilibrium Price</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
+
+</head>
+<body>
+<header>
+  <div>
+    <a href="http://angelinelam.com"><img src="./assets/2262070.svg" alt=""></a>
+  </div>
+  <div>
+    <nav>
+      <ul>
+        <li><a href="">course guide</a></li>
+        <li><a href="">search</a></li>
+        <li><a href="">about</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div>
+    <button>Login</button>
+  </div>
+</header>
+<main>
+  <div class="wrapper">
+
+    <h1>Economics Fundamentals 101</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Quis imperdiet massa tincidunt nunc pulvinar sapien. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Nulla malesuada pellentesque elit eget. Faucibus in ornare quam viverra orci sagittis eu. Ut eu sem integer vitae. Mi bibendum neque egestas congue quisque egestas diam. Facilisis mauris sit amet massa. A scelerisque purus semper eget duis at. Mattis nunc sed blandit libero volutpat sed. Odio aenean sed adipiscing diam donec adipiscing tristique risus.</p>
+  </div>
+  <div>
+    <div>
+      <img src="" alt="">
+      <div>
+        <h4>Case 1:</h4>
+        <p>Nulla malesuada pellentesque elit eget. Faucibus in ornare quam viverra orci sagittis eu. Ut eu sem integer vitae. Mi bibendum neque egestas congue quisque egestas diam. Facilisis mauris sit amet massa. A scelerisque purus semper eget duis at. Mattis nunc sed blandit libero volutpat sed. Odio aenean sed adipiscing diam donec adipiscing tristique risus</p>
+      </div>
+    </div>
+    <div>
+      <img src="" alt="">
+      <div>
+        <h4>Case 1:</h4>
+        <p>Nulla malesuada pellentesque elit eget. Faucibus in ornare quam viverra orci sagittis eu. Ut eu sem integer vitae. Mi bibendum neque egestas congue quisque egestas diam. Facilisis mauris sit amet massa. A scelerisque purus semper eget duis at. Mattis nunc sed blandit libero volutpat sed. Odio aenean sed adipiscing diam donec adipiscing tristique risus</p>
+      </div>
+    </div>
+    <div>
+      <img src="" alt="">
+      <div>
+        <h4>Case 1:</h4>
+        <p>Nulla malesuada pellentesque elit eget. Faucibus in ornare quam viverra orci sagittis eu. Ut eu sem integer vitae. Mi bibendum neque egestas congue quisque egestas diam. Facilisis mauris sit amet massa. A scelerisque purus semper eget duis at. Mattis nunc sed blandit libero volutpat sed. Odio aenean sed adipiscing diam donec adipiscing tristique risus</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <h2>Solidifying Concepts:</h2>
+    <p>Example: ABC Company Inc. has just invented the XYZ Widget. A revolutionary product that will change the lives of everyone that buys it. In this exercise, you will help ABC Company Inc choose the correct equillibrium price for the new product.</p>
+  </div>
+
+  <div id="intro" class="container">
+    <div>
+      <img src="" alt="pug with a yellow hat">
+    </div>
+    <div>
+      <p>ABC Company Inc. has just invented the XYZ Widget. A revolutionary product that will change the lives of everyone that buys it. In this exercise, you will help ABC Company Inc choose the correct equillibrium price for the new product.</p>
+    </div>
+
+  </div>
+  <div id="input" class="container">
+    <form>
+      <div class="section">
+        Price for XYZ Widget:
+        <input type="radio" name="price" value=1> $1
+        <input type="radio" name="price" value=2> $2
+        <input type="radio" name="price" value=3> $3
+        <input type="radio" name="price" value=4> $4
+        <input type="radio" name="price" value=5> $5
+        <input type="radio" name="price" value=6> $6
+        <input type="radio" name="price" value=7> $7
+        <input type="radio" name="price" value=8> $8
+        <input type="radio" name="price" value=9> $9
+        <input type="radio" name="price" value=10> $10
+      </div>
+
+      <input id="calculate" type="button" value="Calculate">
+
+
+    </form>
+  </div>
+  </div>
+  <div id="result" class="container">
+
+  </div>
+</main>
+<footer></footer>
+
+
+<script language="javascript">
+
+   // Equilibrium Price Equations:
+   //  Qsupply = Msupply * price + Bsupply
+   //  Qdemand = Mdemand * price + Bdemand
+
+  var Mdemand = -1000;
+  var Bdemand = 10000;
+  var Msupply = 0; // what if ABC can hire more people when price goes up?
+  var Bsupply = 8000;
+  var consumption;
+  var supply;
+  var message;
+
+  document.getElementById("calculate").addEventListener("click", calculateOutput);
+
+  function calculateOutput() {
+    var price;
+    var priceOptions = document.getElementsByName("price");
+
+    message = "";
+
+    for (var i = 1; i < priceOptions.length; i++) {
+      if (priceOptions[i].checked) {
+        price = priceOptions[i].value;
+        break;
+      }
+    }
+
+    consumption = price * Mdemand + Bdemand;
+    supply = price * Msupply + Bsupply;
+
+    if (consumption > supply) {
+      consumption = supply;
+      message = "ABC Company canot make enough XYZ Widgets";
+    }
+
+    if (consumption <= 0) {
+      consumption = 0;
+      message = "No one will buy XYZ Widgets at this price";
+    }
+
+    /*
+    if (maxRevenue) {
+        message = "This is the equilibrium price"
+    }
+    */
+
+    revenue = consumption * price;
+
+    document.getElementById("result").innerHTML = "XYZ Widgets sold:"+consumption+"/month<br>Revenue:"+revenue+"/month<br><br>"+message;
+  }
+
+</script>
+</body>
+</html>
