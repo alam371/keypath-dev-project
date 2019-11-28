@@ -1,0 +1,70 @@
+header{
+  background-color: $secondary;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 22px;
+
+  .logo-container{
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+  }
+
+  .header-nav-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .nav-btn{
+      font-family: $baseFont;
+      background-color: $tertiary;
+      border: none;
+      color: $secondary;
+      padding: 10px 28px;
+      margin-left: 13px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      border-radius: 12px;
+      transition-duration: 0.4s;
+    }
+
+    .nav-btn:hover{
+      background-color: $primary;
+      color: $white;
+    }
+  }
+
+  nav{
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li{
+      display: inline-block;
+    }
+
+    li a {
+      display: inline-block;
+      color: $white;
+      padding: 0px 18px;
+      text-decoration: none;
+      font-family: $baseFont;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+
+    /* Change the link color on hover */
+    li a:hover {
+      background-color: #555;
+      color: $primary;
+    }
+  }
+
+}

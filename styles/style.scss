@@ -1,9 +1,16 @@
-$primary: #f5f4f4;
-$secondary: #000000;
-$tertiary:#202020;
-$baseFont: 'Playfair Display', serif;
-$secondaryFont: 'Poppins', sans-serif;
-$tertiaryFont: 'Source Sans Pro', sans-serif;
+//colours
+$primary: #fb9fa4;
+$secondary: #283041;
+$tertiary: #d3d4d9;
+$white: #ffff;
+$black: #000;
+//fonts
+$baseFont: 'Poppins', sans-serif;
+$secondaryFont: 'Source Sans Pro', sans-serif;
+//font-size
+$fontSize-std: 18px;
+$fontSize-sm: 16px;
+$fontSize-lg: 28px;
 
 @import "components/setup";
 @import "components/header";
@@ -27,8 +34,6 @@ img{
   width: 90%;
 }
 
-.container {margin:20px;padding:20px;background-color:pink;}
-#result {color:#7A81FF;}
 
 @media screen and (max-width: 700px) {
   input {
