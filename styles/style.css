@@ -363,10 +363,11 @@ main .chart-container {
     max-height: 500px; }
 
 main .form-container {
-  padding: 5%; }
+  padding: 2%; }
   main .form-container p {
     font-family: "Poppins", sans-serif;
-    font-size: 18px; }
+    font-size: 18px;
+    padding: 0% 4%; }
     main .form-container p span {
       font-weight: bold;
       text-decoration: underline; }
@@ -397,7 +398,7 @@ main .form-container {
       padding: 2% 16%; }
     main .form-container form .question-section .form-submit-btn {
       padding: 2% 16%; }
-      main .form-container form .question-section .form-submit-btn input[type=button] {
+      main .form-container form .question-section .form-submit-btn input[type=submit] {
         font-family: "Poppins", sans-serif;
         background-color: #d3d4d9;
         border: none;
@@ -411,7 +412,7 @@ main .form-container {
         -webkit-transition-duration: 0.4s;
         -o-transition-duration: 0.4s;
         transition-duration: 0.4s; }
-      main .form-container form .question-section .form-submit-btn input[type=button]:hover {
+      main .form-container form .question-section .form-submit-btn input[type=submit]:hover {
         background-color: #fb9fa4;
         color: #ffff; }
 

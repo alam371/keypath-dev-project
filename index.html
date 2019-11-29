@@ -112,25 +112,26 @@
 
   <div id="input" class="form-container">
     <div class="form-text-box">
-      <p><span>Question</span>: There's an Instagram #puginhat trend! People want to buy pug hats. ABC Inc needs re-order yarn. The order that they book, can produce 200 units of pug knitted hat. What is the predicted economic outcome? If price is set at $20 per hat?</p>
+      <p><span>Question</span>: There's an Instagram #puginhat trend! People want to buy pug hats 🐶. ABC Inc has already re-order more supplies. The order that they purchased, can produce 200 units of pug knitted hat. What is the predicted economic outcome? If price is set at $20 per hat?</p>
       <img src="./assets/equichartai.jpg" alt="">
     </div>
-    <form>
+
+    <form name="exercise" action="index.html" method="get" onsubmit="onSubmit()">
       <div class="question-section">
         <div class="form-radio-box">
-          <input type="radio" name="price" value=1>
+          <input id="value-one" type="radio" name="price" value=1>
           <label for="">Shortage of 120 units</label>
         </div>
         <div class="form-radio-box">
-          <input type="radio" name="price" value=2>
+          <input id="value-two" type="radio" name="price" value=2>
           <label for="">Shortage of 80 units</label>
         </div>
         <div class="form-radio-box">
-          <input type="radio" name="price" value=3>
+          <input id="value-three" type="radio" name="price" value=3>
           <label for="">Surplus of 80 units</label>
         </div>
         <div class="form-submit-btn">
-          <input id="calculate" type="button" value="Submit">
+          <input id="calculate" type="submit" value="Submit">
         </div>
       </div>
     </form>

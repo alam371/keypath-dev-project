@@ -155,10 +155,11 @@ main{
   }
 
   .form-container{
-    padding: 5%;
+    padding: 2%;
     p{
       font-family: $baseFont;
       font-size: $fontSize-std;
+      padding: 0% 4%;
       span{
         font-weight: bold;
         text-decoration: underline;
@@ -190,7 +191,7 @@ main{
         .form-submit-btn{
           padding: 2% 16%;
 
-          input[type=button]{
+          input[type=submit]{
             font-family: $baseFont;
             background-color: $tertiary;
             border: none;
@@ -204,7 +205,7 @@ main{
             transition-duration: 0.4s;
           }
 
-          input[type=button]:hover{
+          input[type=submit]:hover{
             background-color: $primary;
             color: $white;
           }
