@@ -23,9 +23,9 @@ html{
   font-size: 62.5%;
 }
 
-body{
-  overflow-x: hidden;
-}
+//body{
+//  overflow-x: hidden;
+//}
 
 img{
   width: 100%;
@@ -45,16 +45,3 @@ img{
   }
 }
 
-//  ==== HOW TO MAKE SCSS PARTIAL FILES =======
-// MAKE THE PARTIAL
-// SAVE THE PARTIAL
-// DELETE THE PARTIAL
-// IMPORT THE PARTIAL
-// SAVE style.scss
-
-// ==== HOW TO CODE MIXIN =======
-// @mixin primaryButton($primaryButton) {
-//     font-size: $sizeValue;
-//     color: blue;
-//     font-weight: bold;
-// }
