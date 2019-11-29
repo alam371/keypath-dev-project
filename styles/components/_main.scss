@@ -127,6 +127,36 @@ main{
         margin-bottom: 10%;
       }
     }
+
+    .example-layer-box{
+      position: relative;
+
+      .text-layer-box{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        opacity: 0;
+        cursor: default;
+        transition: opacity 0.2s linear;
+
+        .text-layer{
+          background-color: rgba(251,159,164, 0.7);
+          overflow: hidden;
+          text-align: center;
+          min-height: 92%;
+        }
+
+        p{
+          color: $secondary;
+          font-size: 55px;
+        }
+      }
+      .text-layer-box:hover{
+        opacity: 1;
+      }
+    }
   }
 
   //exercise section
