@@ -1,5 +1,5 @@
 //Chart.js
-const ctx = document.getElementById('myChart').getContext('2d');
+const ctx = document.getElementById('chart1').getContext('2d');
 const chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'line',
@@ -16,6 +16,7 @@ const chart = new Chart(ctx, {
     options: {
     }
 });
+
 
 
 //Exercise Section:
@@ -84,13 +85,12 @@ function init(){
             .then( content => {
                 console.log(content)
                 console.log('META', content.meta)
-                let fig = document.createElement('figure');
                 let img = document.createElement('img');
                 img.src = content.data[0].images.downsized.url;
                 img.alt = content.data[0].title;
-                fig.appendChild(img);
+                $('#result').append(img);
                 let oneGiphy = document.querySelector('.giphy-container');
-                oneGiphy.insertAdjacentElement('afterbegin', fig);
+                //oneGiphy.insertAdjacentElement('afterbegin', fig);
             })
             .catch(err => {
                 console.error(err);

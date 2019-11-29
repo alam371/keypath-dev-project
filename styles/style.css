@@ -349,10 +349,13 @@ main .exercise-container {
   flex-direction: row; }
 
 main .chart-container {
-  padding: 5% 5%; }
+  padding: 3% 5%; }
   main .chart-container h2 {
     font-family: "Poppins", sans-serif;
     font-size: 18px; }
+  main .chart-container span {
+    font-weight: bold;
+    text-decoration: underline; }
   main .chart-container .chart-text {
     padding: 0% 4%; }
   main .chart-container .chart-body {
@@ -360,35 +363,91 @@ main .chart-container {
     max-height: 500px; }
 
 main .form-container {
-  padding: 5% 8%; }
+  padding: 5%; }
   main .form-container p {
     font-family: "Poppins", sans-serif;
     font-size: 18px; }
-  main .form-container .giphy-container {
-    width: 400px;
-    width: 400px; }
+    main .form-container p span {
+      font-weight: bold;
+      text-decoration: underline; }
+  main .form-container .form-text-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    main .form-container .form-text-box img {
+      max-width: 500px; }
+  main .form-container form .question-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 22px; }
+    main .form-container form .question-section .form-radio-box {
+      padding: 2% 16%; }
+    main .form-container form .question-section .form-submit-btn {
+      padding: 2% 16%; }
+      main .form-container form .question-section .form-submit-btn input[type=button] {
+        font-family: "Poppins", sans-serif;
+        background-color: #d3d4d9;
+        border: none;
+        color: #283041;
+        padding: 10px 28px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 12px;
+        -webkit-transition-duration: 0.4s;
+        -o-transition-duration: 0.4s;
+        transition-duration: 0.4s; }
+      main .form-container form .question-section .form-submit-btn input[type=button]:hover {
+        background-color: #fb9fa4;
+        color: #ffff; }
 
-main .end-section-container .next-btn {
-  font-family: "Poppins", sans-serif;
-  background-color: #d3d4d9;
-  border: none;
-  color: #283041;
-  padding: 10px 28px;
-  margin-left: 13px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
-  -webkit-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  transition-duration: 0.4s; }
+main .giphy-container {
+  max-width: 30%;
+  height: 30%; }
 
-main .end-section-container .next-btn:hover {
-  background-color: #fb9fa4;
-  color: #ffff; }
+main .end-section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #283041;
+  height: 100%; }
+  main .end-section-container .next-btn {
+    font-family: "Poppins", sans-serif;
+    background-color: #d3d4d9;
+    border: none;
+    color: #283041;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin: 2% 0%; }
+  main .end-section-container .next-btn:hover {
+    background-color: #fb9fa4;
+    color: #ffff; }
 
 html {
   font-size: 62.5%; }

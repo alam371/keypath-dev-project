@@ -136,10 +136,14 @@ main{
 
   }
   .chart-container{
-    padding: 5% 5%;
+    padding: 3% 5%;
     h2{
       font-family: $baseFont;
       font-size: $fontSize-std;
+    }
+    span{
+      font-weight: bold;
+      text-decoration: underline;
     }
     .chart-text{
       padding: 0% 4%;
@@ -151,28 +155,82 @@ main{
   }
 
   .form-container{
-    padding: 5% 8%;
+    padding: 5%;
     p{
       font-family: $baseFont;
       font-size: $fontSize-std;
+      span{
+        font-weight: bold;
+        text-decoration: underline;
+      }
     }
 
-    //giphy section
-    .giphy-container{
-      width: 400px;
-      width: 400px;
+    .form-text-box{
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      img{
+        max-width: 500px;
+      }
     }
+
+    form{
+      .question-section{
+        display: flex;
+        flex-direction: column;
+        //justify-content: center;
+        cursor: pointer;
+        font-size: 22px;
+
+        .form-radio-box{
+          padding: 2% 16%;
+        }
+
+        .form-submit-btn{
+          padding: 2% 16%;
+
+          input[type=button]{
+            font-family: $baseFont;
+            background-color: $tertiary;
+            border: none;
+            color: $secondary;
+            padding: 10px 28px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 12px;
+            transition-duration: 0.4s;
+          }
+
+          input[type=button]:hover{
+            background-color: $primary;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  //giphy section
+  .giphy-container{
+    max-width: 30%;
+    height: 30%;
   }
 
   //end of content section
   .end-section-container{
+    display: flex;
+    justify-content: center;
+    background-color: $secondary;
+    height: 100%;
     .next-btn{
       font-family: $baseFont;
       background-color: $tertiary;
       border: none;
       color: $secondary;
       padding: 10px 28px;
-      margin-left: 13px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
@@ -181,6 +239,7 @@ main{
       -moz-border-radius: 12px;
       border-radius: 12px;
       transition-duration: 0.4s;
+      margin: 2% 0%;
     }
 
     .next-btn:hover{
