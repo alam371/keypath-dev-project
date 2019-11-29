@@ -309,3 +309,17 @@
     }
   }
 }
+
+@media (max-width: 320px){
+  main{
+    .main-container{
+      min-height: 1000px;
+
+    }
+    .main-inner-container{
+      top: 110%;
+    }
+
+
+  }
+}
