@@ -210,9 +210,8 @@ main{
       .question-section{
         display: flex;
         flex-direction: column;
-        //justify-content: center;
         cursor: pointer;
-        font-size: 22px;
+        font-size: $fontSize-std;
 
         .form-radio-box{
           padding: 2% 16%;

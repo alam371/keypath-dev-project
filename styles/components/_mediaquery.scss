@@ -113,6 +113,15 @@
       }
     }
   }
+
+  header{
+    .header-nav-container{
+      display: none;
+    }
+  }
+  .headerTextContainer .headerNavBoxBurger{
+    display: block;
+  }
 }
 
 //725px to hamburger nav!!
