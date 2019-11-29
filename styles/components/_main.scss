@@ -82,7 +82,7 @@ main{
     display: flex;
     flex-direction: column;
     border-style: solid;
-    border-width: 2px;
+    border-width: 3px;
     border-color: $tertiary;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -190,6 +190,10 @@ main{
 
         .form-submit-btn{
           padding: 2% 16%;
+          .alert-submit-msg,
+          .try-again-msg{
+            color: $secondary;
+          }
 
           input[type=submit]{
             font-family: $baseFont;
@@ -218,6 +222,11 @@ main{
   .giphy-container{
     max-width: 30%;
     height: 30%;
+    .correct-msg{
+      font-family: $baseFont;
+      font-size: $fontSize-std;
+      color: $secondary;
+    }
   }
 
   //end of content section

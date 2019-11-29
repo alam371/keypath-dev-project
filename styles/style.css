@@ -297,7 +297,7 @@ main .card-box {
   -ms-flex-direction: column;
   flex-direction: column;
   border-style: solid;
-  border-width: 2px;
+  border-width: 3px;
   border-color: #d3d4d9;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -398,6 +398,9 @@ main .form-container {
       padding: 2% 16%; }
     main .form-container form .question-section .form-submit-btn {
       padding: 2% 16%; }
+      main .form-container form .question-section .form-submit-btn .alert-submit-msg,
+      main .form-container form .question-section .form-submit-btn .try-again-msg {
+        color: #283041; }
       main .form-container form .question-section .form-submit-btn input[type=submit] {
         font-family: "Poppins", sans-serif;
         background-color: #d3d4d9;
@@ -419,6 +422,10 @@ main .form-container {
 main .giphy-container {
   max-width: 30%;
   height: 30%; }
+  main .giphy-container .correct-msg {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #283041; }
 
 main .end-section-container {
   display: -webkit-box;
